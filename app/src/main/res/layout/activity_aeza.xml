@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    tools:context=".aeza">
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#FFFF"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:elevation="26dp"
+        android:gravity="center"
+        android:hint="جست و جو"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Book_Holders"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border2"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="دارندگان کتاب"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@+id/et_search"
+        app:layout_constraintTop_toBottomOf="@+id/et_search" />
+
+    <TextView
+        android:id="@+id/allـmembers"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border2"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="همه اعضا"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintRight_toRightOf="@id/et_search"
+        app:layout_constraintTop_toBottomOf="@+id/et_search" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reca_aeza"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toTopOf="@id/view3"
+        app:layout_constraintLeft_toLeftOf="@+id/et_search"
+        app:layout_constraintRight_toRightOf="@+id/et_search"
+        app:layout_constraintTop_toBottomOf="@+id/Book_Holders" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_baseline_add_circle_outline"
+        app:layout_constraintBottom_toTopOf="@id/view3"
+        app:layout_constraintLeft_toLeftOf="@id/view3"
+        app:layout_constraintRight_toRightOf="@id/view3" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#F1D205"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_book"
+        app:layout_constraintBottom_toBottomOf="@id/x1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/x1"
+        app:layout_constraintTop_toTopOf="@id/x1" />
+
+    <TextView
+        android:id="@+id/x1"
+        android:layout_width="2dp"
+        android:layout_height="40dp"
+        android:background="#252424"
+        app:layout_constraintBottom_toBottomOf="@id/view3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_people2"
+        app:layout_constraintBottom_toBottomOf="@+id/x1"
+        app:layout_constraintLeft_toRightOf="@id/x1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/x1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
