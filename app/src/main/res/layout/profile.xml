@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="profile">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:background="#F1D205"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_baseline_edit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_east"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/imag4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text="علی خانکیش"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toLeftOf="@id/image4"
+        app:layout_constraintTop_toTopOf="@+id/image4" />
+
+    <TextView
+        android:id="@+id/fn_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="09366221451"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="@id/tv_name"
+        app:layout_constraintRight_toRightOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <ImageView
+        android:id="@+id/mor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:elevation="26dp"
+        android:src="@drawable/ic_baseline_expand_more"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_name" />
+
+    <ImageView
+        android:id="@+id/chat"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_message"
+        app:layout_constraintBottom_toBottomOf="@+id/call"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/call"
+        app:layout_constraintTop_toTopOf="@+id/call" />
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view2" />
+
+    <ImageView
+        android:id="@+id/recipe"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_baseline_receipt"
+        app:layout_constraintLeft_toRightOf="@+id/call"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/call" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/call">
+
+    </View>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add"
+        android:src="@drawable/ic_baseline_add_circle_outline_24"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintLeft_toLeftOf="@id/view"
+        app:layout_constraintRight_toRightOf="@id/view"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:text="سوابق"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="normal"
+        app:layout_constraintRight_toRightOf="@id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/mor_Records"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:text="بیشتر"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="@id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/mors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_baseline_arrow_back"
+        app:layout_constraintBottom_toBottomOf="@id/mor_Records"
+        app:layout_constraintLeft_toLeftOf="@id/view"
+        app:layout_constraintRight_toLeftOf="@id/mor_Records"
+        app:layout_constraintTop_toTopOf="@+id/mor_Records" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="330dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintLeft_toLeftOf="@id/view"
+        app:layout_constraintRight_toRightOf="@id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

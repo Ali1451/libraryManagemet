@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/border"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </View>
+
+    <View
+        android:id="@+id/xx"
+        android:layout_width="0.5dp"
+        android:layout_height="0dp"
+        android:layout_marginRight="130dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintRight_toRightOf="@id/view"
+        app:layout_constraintTop_toTopOf="@id/view" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/imag4"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintLeft_toLeftOf="@id/xx"
+        app:layout_constraintRight_toRightOf="@id/view"
+        app:layout_constraintTop_toTopOf="@id/view" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:text="علی خانکیش"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toLeftOf="@id/xx"
+        app:layout_constraintTop_toTopOf="@id/view" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:text="09366221451"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#8C8B8B"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toLeftOf="@id/xx"
+        app:layout_constraintTop_toTopOf="@id/view" />
+
+    <ImageView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_control_point_2"
+        app:layout_constraintTop_toTopOf="@id/view"
+        app:layout_constraintLeft_toLeftOf="@id/view"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        android:layout_marginLeft="15dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
