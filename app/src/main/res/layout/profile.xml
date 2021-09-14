@@ -53,7 +53,7 @@
         android:layout_marginRight="15dp"
         android:text="علی خانکیش"
         android:textColor="@color/black"
-        android:textSize="26sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintRight_toLeftOf="@id/image4"
         app:layout_constraintTop_toTopOf="@+id/image4" />
@@ -64,8 +64,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="09366221451"
-        android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textColor="#2E2E2E"
+        android:textSize="16sp"
         android:textStyle="normal"
         app:layout_constraintRight_toRightOf="@+id/tv_name"
         app:layout_constraintTop_toBottomOf="@+id/tv_name" />
@@ -74,7 +74,6 @@
         android:id="@+id/mor"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
         android:elevation="26dp"
         android:src="@drawable/ic_baseline_expand_more"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -128,8 +127,8 @@
     </View>
 
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@drawable/add"
         android:layout_marginBottom="8dp"
         android:src="@drawable/ic_add"

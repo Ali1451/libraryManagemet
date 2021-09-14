@@ -22,10 +22,10 @@
         android:id="@+id/xx"
         android:layout_width="0.5dp"
         android:layout_height="0dp"
-        android:layout_marginRight="130dp"
+        android:layout_marginRight="10dp"
         android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="@id/view"
-        app:layout_constraintRight_toRightOf="@id/view"
+        app:layout_constraintRight_toLeftOf="@id/image4"
         app:layout_constraintTop_toTopOf="@id/view" />
 
     <ImageView

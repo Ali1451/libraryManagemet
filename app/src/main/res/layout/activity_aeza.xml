@@ -30,7 +30,6 @@
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="@drawable/border2"
         android:gravity="center"
         android:padding="6dp"
         android:text="دارندگان کتاب"
@@ -40,11 +39,20 @@
         app:layout_constraintTop_toBottomOf="@+id/et_search" />
 
     <TextView
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:background="#252424"
+        app:layout_constraintBottom_toBottomOf="@id/allـmembers"
+        app:layout_constraintLeft_toRightOf="@id/Book_Holders"
+        app:layout_constraintRight_toLeftOf="@id/allـmembers"
+        app:layout_constraintTop_toTopOf="@id/allـmembers" />
+
+
+    <TextView
         android:id="@+id/allـmembers"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="@drawable/border2"
         android:gravity="center"
         android:padding="6dp"
         android:text="همه اعضا"

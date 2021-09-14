@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".book">
 
-
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
@@ -22,7 +21,6 @@
         android:src="@drawable/ic_baseline_edit"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <TextView
         android:id="@+id/name_book"
@@ -66,7 +64,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:background="#E38140"
+        android:background="#3AD111"
         android:elevation="26dp"
         android:gravity="center"
         android:text="موجود"
@@ -75,7 +73,6 @@
         app:layout_constraintLeft_toLeftOf="@+id/name_book"
         app:layout_constraintRight_toRightOf="@+id/name_book"
         app:layout_constraintTop_toBottomOf="@+id/name_book" />
-
 
     <TextView
         android:id="@+id/tv_cod"
@@ -101,6 +98,7 @@
         app:layout_constraintTop_toBottomOf="@id/tv_cod" />
 
     <TextView
+        android:id="@+id/xxx"
         android:layout_width="0dp"
         android:layout_height="0.5dp"
         android:layout_marginLeft="15dp"
@@ -109,7 +107,6 @@
         app:layout_constraintLeft_toLeftOf="@+id/frame"
         app:layout_constraintRight_toRightOf="@+id/writer"
         app:layout_constraintTop_toBottomOf="@+id/et_cod" />
-
 
     <TextView
         android:id="@+id/writer"
@@ -144,7 +141,6 @@
         app:layout_constraintRight_toRightOf="@+id/writer"
         app:layout_constraintTop_toBottomOf="@+id/ET_writer" />
 
-
     <TextView
         android:id="@+id/tv_ISBN"
         android:layout_width="wrap_content"
@@ -177,13 +173,12 @@
         app:layout_constraintRight_toRightOf="@id/tv_ISBN"
         app:layout_constraintTop_toBottomOf="@+id/et_ISBN" />
 
-
     <TextView
         android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="تاریخ افزودن"
+        android:text="تاریخ افزودن به کتابخانه"
         android:textColor="#2B2A2A"
         android:textSize="24dp"
         app:layout_constraintRight_toRightOf="@id/frame"
@@ -209,7 +204,6 @@
         app:layout_constraintLeft_toLeftOf="@+id/frame"
         app:layout_constraintRight_toRightOf="@id/date"
         app:layout_constraintTop_toBottomOf="@+id/et_date" />
-
 
     <TextView
         android:id="@+id/address"

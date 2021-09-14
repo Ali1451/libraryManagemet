@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LibraryManagement">
+        <activity android:name=".registerNewMember"></activity>
+        <activity android:name=".RegisterNewBook" />
         <activity android:name=".aeza" />
         <activity android:name=".book" />
-        <activity android:name=".profile"
+        <activity
+            android:name=".profile"
             android:exported="false">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

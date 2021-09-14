@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".registerNewMember">
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/colorbottom"
+        android:gravity="center"
+        android:src="@drawable/ic_baseline_edit"
+        android:text="ثبت"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_view" />
+
+    <TextView
+        android:id="@+id/tv_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_baseline_edit"
+        android:text="ثبت عضو جدید"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/register"
+        app:layout_constraintRight_toLeftOf="@id/bak"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/bak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_east"
+        app:layout_constraintBottom_toBottomOf="@id/tv_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_view" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/imag4"
+        app:layout_constraintLeft_toLeftOf="@id/tv_view"
+        app:layout_constraintRight_toRightOf="@id/tv_view"
+        app:layout_constraintTop_toTopOf="@id/tv_view" />
+
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image4" />
+
+    <TextView
+        android:id="@+id/tv_name_member_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        android:paddingRight="3dp"
+        android:text="نام و نام خانوادگی"
+        android:textColor="#888686"
+        android:textSize="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view" />
+
+    <EditText
+        android:id="@+id/et_name_member"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:gravity="right"
+        android:hint="نام و نام خانوادگی را وارد کنید"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/tv_name_member_register"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_member_register" />
+
+
+    <TextView
+        android:id="@+id/tv_cod_melly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="کد ملی"
+        android:textColor="#888686"
+        android:textSize="24dp"
+        app:layout_constraintRight_toRightOf="@+id/et_name_member"
+        app:layout_constraintTop_toBottomOf="@+id/et_name_member" />
+
+    <EditText
+        android:id="@+id/et_cod_melly"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="کد ملی را وارد کنید"
+        android:textColor="#0B0A0A"
+        android:textColorHint="@color/black"
+        android:textSize="24dp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="@id/et_name_member"
+        app:layout_constraintRight_toRightOf="@+id/tv_cod_melly"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cod_melly" />
+
+    <TextView
+        android:id="@+id/tv_phone_number_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="شماره تلفن همراه"
+        android:textColor="#888686"
+        android:textSize="24dp"
+        app:layout_constraintRight_toRightOf="@id/et_cod_melly"
+        app:layout_constraintTop_toBottomOf="@+id/et_cod_melly" />
+
+    <EditText
+        android:id="@+id/et_phone_number_member"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:hint="شماره تلفن همراه را وارد کنید"
+        android:textColor="#0B0A0A"
+        android:textColorHint="@color/black"
+        android:textSize="24dp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="@id/et_name_member"
+        app:layout_constraintRight_toRightOf="@id/tv_phone_number_member"
+        app:layout_constraintTop_toBottomOf="@+id/tv_phone_number_member" />
+
+    <TextView
+        android:id="@+id/tv_address_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="محل سکونت"
+        android:textColor="#888686"
+        android:textSize="24dp"
+        app:layout_constraintRight_toRightOf="@id/et_phone_number_member"
+        app:layout_constraintTop_toBottomOf="@+id/et_phone_number_member" />
+
+    <EditText
+        android:id="@+id/et_address_member"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="محل سکونت را وارد کنید"
+        android:textColor="#0B0A0A"
+        android:textColorHint="@color/black"
+        android:textSize="24dp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="@id/et_name_member"
+        app:layout_constraintRight_toRightOf="@id/tv_address_member"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address_member" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:text="تاریخ عضویت"
+        android:textColor="#888686"
+        android:textSize="24dp"
+        app:layout_constraintRight_toRightOf="@id/et_address_member"
+        app:layout_constraintTop_toBottomOf="@+id/et_address_member" />
+
+
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:hint="9/4/84"
+        android:textColor="#0B0A0A"
+        android:textColorHint="@color/black"
+        android:textSize="24dp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="@id/et_name_member"
+        app:layout_constraintRight_toRightOf="@id/tv_date"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

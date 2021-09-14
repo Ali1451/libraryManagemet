@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".RegisterNewBook">
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_baseline_edit"
+        android:text="ثبت"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="28dp"
+        android:background="@drawable/colorbottom"
+        app:layout_constraintBottom_toBottomOf="@id/tv_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_view" />
+
+    <TextView
+        android:id="@+id/tv_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_baseline_edit"
+        android:text="ثبت کتاب جدید"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/register"
+        app:layout_constraintRight_toLeftOf="@id/bak"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/bak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_east"
+        app:layout_constraintBottom_toBottomOf="@id/tv_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_view" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/book"
+        app:layout_constraintLeft_toLeftOf="@id/tv_view"
+        app:layout_constraintRight_toRightOf="@id/tv_view"
+        app:layout_constraintTop_toBottomOf="@id/tv_view" />
+
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image4" />
+
+    <TextView
+        android:id="@+id/tv_name_book_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="نام کتاب"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#888686"
+        app:layout_constraintTop_toTopOf="@id/view"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="25dp"/>
+
+    <EditText
+        android:id="@+id/et_name_book"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:gravity="right"
+        android:hint="نام کتاب را وارد کنید"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/tv_name_book_register"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_book_register" />
+
+
+    <TextView
+        android:id="@+id/tv_cod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="کد کتاب"
+        android:textColor="#888686"
+        android:textSize="24dp"
+        app:layout_constraintRight_toRightOf="@id/tv_name_book_register"
+        app:layout_constraintTop_toBottomOf="@id/et_name_book" />
+
+    <EditText
+        android:id="@+id/et_cod"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:gravity="right"
+        android:hint="کد کتاب را وارد کنید"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/tv_cod"
+        app:layout_constraintTop_toBottomOf="@id/tv_cod" />
+
+
+    <TextView
+        android:id="@+id/writer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="نام نویسنده"
+        android:textColor="#888686"
+        android:textSize="24dp"
+        app:layout_constraintRight_toRightOf="@+id/et_cod"
+        app:layout_constraintTop_toBottomOf="@+id/et_cod" />
+
+    <EditText
+        android:id="@+id/ET_writer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="نام نویسنده را وارد کنید"
+        android:textColor="#0B0A0A"
+        android:textColorHint="@color/black"
+        android:textSize="24dp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="@id/et_cod"
+        app:layout_constraintRight_toRightOf="@+id/writer"
+        app:layout_constraintTop_toBottomOf="@+id/writer" />
+
+    <TextView
+        android:id="@+id/tv_ISBN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="شابک"
+        android:textColor="#888686"
+        android:textSize="24dp"
+        app:layout_constraintRight_toRightOf="@id/ET_writer"
+        app:layout_constraintTop_toBottomOf="@+id/ET_writer" />
+
+    <EditText
+        android:id="@+id/et_ISBN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:hint="شابک را وارد کنید"
+        android:textColor="#0B0A0A"
+        android:textColorHint="@color/black"
+        android:textSize="24dp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="@id/et_cod"
+        app:layout_constraintRight_toRightOf="@id/tv_ISBN"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ISBN" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="تاریخ افزودن به کتابخانه"
+        android:textColor="#888686"
+        android:textSize="24dp"
+        app:layout_constraintRight_toRightOf="@id/et_ISBN"
+        app:layout_constraintTop_toBottomOf="@+id/et_address" />
+
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:hint="تاریخ افزودن به کتابخانه را وارد کنید"
+        android:textColor="#0B0A0A"
+        android:textColorHint="@color/black"
+        android:textSize="24dp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="@id/et_cod"
+        app:layout_constraintRight_toRightOf="@id/date"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="آدرس کتاب در کتابخانه"
+        android:textColor="#888686"
+        android:textSize="24dp"
+        app:layout_constraintRight_toRightOf="@id/et_date"
+        app:layout_constraintTop_toBottomOf="@+id/et_ISBN" />
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="آدرس کتاب در کتابخانه را وارد کنید"
+        android:textColor="#0B0A0A"
+        android:textColorHint="@color/black"
+        android:textSize="24dp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="@id/et_cod"
+        app:layout_constraintRight_toRightOf="@id/et_cod"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

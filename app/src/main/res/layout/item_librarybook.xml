@@ -1,67 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <LinearLayout
-        android:id="@+id/linear"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        tools:ignore="MissingConstraints">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="جوان موفق"
-                android:textSize="26sp"
-                android:textColor="@color/black"
-                android:layout_gravity="right"
-                android:gravity="center_vertical"
-                android:layout_marginTop="15dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ق 11 ردیف دوم"
-                android:textSize="28sp"
-                android:layout_marginLeft="10dp"
-                android:textColor="@color/black"
-                android:layout_gravity="center_vertical"
-                android:padding="5dp"
-                android:gravity="right" />
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="26sp"
-            android:text="عباس رحیمی"
-            android:gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_gravity="top"
-            android:layout_marginTop="12dp"/>
-
-
-    </LinearLayout>
+    android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="0dp"
-        android:layout_height="1dp"
+        android:id="@+id/tv_name_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:background="#858282"
-        app:layout_constraintLeft_toLeftOf="@+id/linear"
-        app:layout_constraintRight_toRightOf="@+id/linear"
-        app:layout_constraintTop_toBottomOf="@+id/linear" />
+        android:layout_marginRight="30dp"
+        android:text="جوان موفق"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name_writer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="80dp"
+        android:text="عباس رحیمی"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintRight_toLeftOf="@id/tv_name_book"
+        app:layout_constraintTop_toTopOf="@id/tv_name_book" />
+
+    <TextView
+        android:id="@+id/tv_address_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="ق 11 ردیف دوم"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_book"
+        app:layout_constraintRight_toRightOf="@id/tv_name_book"
+        android:textSize="24sp" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
